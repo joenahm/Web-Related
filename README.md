@@ -7,4 +7,4 @@ For test and temp
 
 > ## 信息
 - ### Web在线训练系统:[点击进入](http://sjydzq.top/web)
-- ### Web知识总结:[点击跳转](web/web_summary.md)
+- ### Web知识总结:[点击跳转](web/README.md)
