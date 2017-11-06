@@ -1,10 +1,9 @@
 # Web开发相关 - Web Related
 Something related to web
 
-> ## 公告
-- ### Web的第二次上机报告和网页源文件在"web/2nd"文件夹里
-- ### 本次存储的文件为10.27上机的内容，将于报告上交后删除
+> ## 作业更新
+- ### Web的第二次上机报告和网页源文件在[homework/2nd](homework/2nd)文件夹里
 
-> ## 信息
+> ## Web学习
 - ### Web在线训练系统:[点击进入](http://sjydzq.top/web)
 - ### Web知识总结:[点击跳转](web/README.md)
