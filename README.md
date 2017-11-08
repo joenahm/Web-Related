@@ -6,4 +6,4 @@ Something related to web
 
 > ## Web学习
 - ### Web在线训练系统:[点击进入](http://sjydzq.top/web)
-- ### Web知识总结:[点击跳转](web/README.md)
+- ### Web知识总结:[点击跳转](tutorials/README.md)
