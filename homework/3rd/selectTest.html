@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>selectTest</title>
+	<style>
+		article{
+			width: 500px;
+			margin: 0 auto;
+		}
+		select{
+			width: 200px;
+			height: 400px;
+			float: left;
+		}
+		option{
+			font-size: 20px;
+		}
+		#buttons{
+			width: 100px;
+			float: left;
+			margin-top: 100px;
+		}
+		button{
+			width: 90px;
+			height: 30px;
+			margin: 5px 0 5px 5px;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<select name="selectLeft" id="selectLeft" multiple="multiple">
+		</select>
+		<div id="buttons">
+			<button id="rightMove">></button>
+			<button id="rightMoveAll">>></button>
+			<button id="leftMove"><</button>
+			<button id="leftMoveAll"><<</button>	
+		</div>
+		<select name="selectRight" id="selectRight" multiple="multiple">
+		</select>
+	</article>
+	
+</body>
+<script src="js/my-js.js"></script>
+<script>
+	var infoArr = [];
+	for( var i = 0 ; i < 10 ; i++ ){
+		infoArr.push("选项"+(i+1));
+	}
+
+	init($("#","selectLeft"),infoArr);
+	bindingMoveAll($("#","rightMoveAll"),$("#","selectLeft"),$("#","selectRight"));
+	bindingMoveAll($("#","leftMoveAll"),$("#","selectRight"),$("#","selectLeft"));
+	bindingMove($("#","rightMove"),$("#","selectLeft"),$("#","selectRight"));
+	bindingMove($("#","leftMove"),$("#","selectRight"),$("#","selectLeft"));
+</script>
+</html>

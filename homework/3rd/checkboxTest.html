@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>checkboxTest</title>
+</head>
+	<style>
+		article{
+			width: 250px;
+			margin: 0 auto;
+		}
+	</style>
+<body>
+	<article>
+		<input type="checkbox" value="旅游" ><span> 旅游</span><br>
+		<input type="checkbox" value="音乐"><span> 音乐</span><br>
+		<input type="checkbox" value="运动"><span> 运动</span><br>
+		<span>选中项的信息为：</span><span id="info"></span><br>
+		<button id="allBtn">全选</button> <button id="cancelBtn">取消全选</button> <button id="showBtn">显示</button>
+	</article>	
+</body>
+<script src="js/my-js.js"></script>
+<script>
+	var objArr = $("","input")
+
+	selectAll($("#","allBtn"),objArr);
+	unSelectAll($("#","cancelBtn"),objArr);
+	showInfo($("#","showBtn"),objArr,$("#","info"));
+</script>
+</html> 

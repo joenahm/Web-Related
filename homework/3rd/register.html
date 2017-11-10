@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>内容1</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			box-sizing: border-box;
+			padding-left: 100px;
+			background: #ccc;
+		}
+		#title{
+			text-align: center;
+			font-size: 22px;
+			font-weight: bold;
+		}
+		#form{
+			width: 400px;
+			box-sizing: border-box;
+			padding: 20px;
+			margin: 0 auto;
+		}
+		.inputBox{
+			width: 130px;
+			height: 25px;
+			padding: 5px;
+			box-sizing: border-box;
+		}
+		#remark{
+			width: 200px;
+			height: 30px;
+			overflow-x: hidden;
+		}
+		.button{
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>今天是<span id="date"></span></header>
+	<div id="title"><span>请注册</span></div>
+	<div id="form">	
+		<form action="" method="post">
+			<label for="username">用户 : </label><input type="text" class="inputBox" name="username" id="username" placeholder="请在此输入用户名"><span class="usernameAlert"> 2-10位</span><br>
+			<br>
+			<label for="password">密码 : </label><input type="password" class="inputBox" name="password" id="password" placeholder="请在此输入密码"><span class="passwordAlert"> 2-8位,不能与用户名相同</span><br>
+			<br>
+			<label for="confirm">确认 : </label><input type="password" class="inputBox" name="confirm" id="confirm" placeholder="请再输一遍密码"><span class="confirmAlert"></span><br>
+			<br>
+			<label for="birthday">生日 : </label><input type="text" class="inputBox" name="birthday" id="birthday" placeholder="请在此输入生日"><span class="birthdayAlert"> 格式：1970-01-01</span><br>
+			<br>
+			<label for="education">学历 : </label><input type="radio" name="education" class="education" value="专科"><span> 专科 </span><input type="radio" name="education" class="education" value="本科"><span> 本科 </span><input type="radio" name="education" class="education" value="研究生"><span> 研究生 </span><span class="educationAlert"></span><br>
+			<br>
+			<label for="location">地区 : </label><select name="location" id="location">
+				<option value="东北">东北</option>
+				<option value="华北">华北</option>
+				<option value="江南">江南</option>
+			</select><br>
+			<br>
+			<label for="remark">备注 : </label><textarea name="remark" id="remark"></textarea><br>
+			<br>
+			<input type="reset" class="button"> <button class="button" id="checkbox">提交并运行checkbox测试</button> <button class="button" id="select">select测试</button>
+		</form>
+	</div>
+</body>
+<script src="js\my-js.js"></script>
+<script>
+	var objArr = [];
+	objArr['username'] = $("#","username");
+	objArr['password'] = $("#","password");
+	objArr['confirm'] = $("#","confirm");
+	objArr['birthday'] = $("#","birthday");
+	objArr['education'] = $(".","education");
+	objArr['location'] = $("#","location");
+	objArr['remark'] = $("#","remark");
+
+	for( key in objArr ){
+		binding(objArr,key);
+	}
+
+	$("","form")[0].onsubmit = function(){
+		return false;
+	}
+	
+	window.onload = function(){
+		var timeStage = $("#","date");
+		showTime(timeStage);
+		bindingSubmit(objArr,$("#","checkbox"),$("#","select"));
+	}
+</script>
+</html>
