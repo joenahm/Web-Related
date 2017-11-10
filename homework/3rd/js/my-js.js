@@ -274,7 +274,7 @@ function showInfo(obj, res, stage){
 /* selectTest.html */
 function init(stage,infoArr){
 	for( key in infoArr ){
-		var innerStr = "<option value="+infoArr[key]+">"+infoArr[key]+"</option>"
+		var innerStr = "<option value="+infoArr[key]+">"+infoArr[key]+"</option>";
 		stage.innerHTML += innerStr;
 	}
 }
