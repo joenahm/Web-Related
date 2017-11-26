@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>4th Web综合应用</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<nav>
+			<img src="images/maintop001.gif" alt="Logo">
+			<div id="navLink">
+				<a href="" class="link">首页</a><span>|</span>
+				<a href="" class="link">公司简介</a><span>|</span>
+				<a href="" class="link">新闻中心</a><span>|</span>
+				<a href="" class="link">产品展示</a><span>|</span>
+				<a href="" class="link">新品推荐</a><span>|</span>
+				<a href="" class="link">合作伙伴</a><span>|</span>
+				<a href="" class="link">网上订单</a><span>|</span>
+				<a href="" class="link">人才招聘</a><span>|</span>
+				<a href="" class="link">联系我们</a>
+			</div>
+		</nav>
+		<div id="banner">
+			<img src="images/main_banner_r3_c1.jpg" alt="Banner">
+		</div>
+		<div class="col-md-2">
+			<h5>最新公告</h5><br>
+			<div id="notice">
+				<p>
+					本公司将一如即往，服务好新老客户，为客户提供最优价产品，欢迎联系我们！<br>
+					热线：0755-83155222 <br>
+					传真：0755-83155366 <br>
+					电邮：dulonglp@vip.163.com <br>
+					QQ:59223322   228238633 <br>
+				</p>
+			</div><br>
+			<h5>友情链接</h5><br>
+			<div id="links">
+				<img src="images/link002.gif" alt="Links"><br>
+				<span id="link">-----友情链接-----</span>
+				<div id="linkList">
+					<a href="http://sjydzq.cn" target="_blank">世间一等珍奇</a><br>
+					<a href="http://sjydzq.top/web" target="_blank">Web在线训练系统</a><br>
+					<a href="http://github.com/joenahm" target="_blank">周南GitHub</a>
+				</div>
+			</div><br><br>
+			<img src="images/newp001.jpg" alt="imiwakanai">
+		</div>
+		<div class="col-md-10">
+			<img src="images/newtoptb006.gif" alt="orders"><br>
+			<img src="images/newp006.jpg" alt=""><br>
+			<form action="">
+				<table>
+					<tr>
+						<td>订单产品：</td>
+						<td><input id="product" type="text"></td>
+					</tr>
+					<tr>
+						<td>订单数量：</td>
+						<td><input id="amount" type="text"></td>
+					</tr>
+					<tr>
+						<td>订单公司：</td>
+						<td><input id="company" type="text"></td>
+					</tr>
+					<tr>
+						<td>联系人：</td>
+						<td><input id="linkman" type="text"></td>
+					</tr>
+					<tr>
+						<td>联系电话：</td>
+						<td><input id="phone" type="text"></td>
+					</tr>
+					<tr>
+						<td>联系传真：</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>Email：</td>
+						<td><input id="email" type="text"></td>
+					</tr>
+					<tr>
+						<td>备注：</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<br>
+							<input type="submit" id="submit" value="提交订单">
+							<input type="reset" value="重写">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div id="showInfo"></div>
+		</div>
+		<div style="clear: both;"></div>
+		<footer>
+			<span>版权所有：深圳市都龙实业发展有限公司　网站备案编号: <span style="color: #f70;">粤ICP备05054648号</span>　服务热线：0755-83155222 传真：0755-83155366<br> 
+		E-mail:dulonglp@vip.163.com</span>
+	</footer>
+</div>
+</body>
+<script src="js/script.js"></script>
+<script>
+	$("","form")[0].onsubmit = function(){
+		return false;
+	}
+</script>
+</html>
