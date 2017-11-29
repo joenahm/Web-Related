@@ -1,6 +1,11 @@
 # Web开发相关 - Web Related
 Something related to web
 
+> ## 重要公告
+
+### Web学习板块停止更新
+即是说，Web在线训练系统和Web知识总结短时间内将不会再添加新内容
+
 >## 作业下载
 
 [![](https://img.shields.io/badge/%E4%B8%8A%E6%9C%BA%E6%8A%A5%E5%91%8A%E4%B8%8B%E8%BD%BD-4:%E7%BB%BC%E5%90%88%E5%AE%9E%E9%AA%8C-green.svg?style=for-the-badge)](https://github.com/joenahm/Web-Related/raw/master/homework/4th/4th.zip)
